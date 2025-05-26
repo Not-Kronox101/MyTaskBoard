@@ -46,7 +46,7 @@
 ## 3. Database Design
 
 ### a. Entity-Relationship Diagram (ERD)
-_(Not shown here; assumed to be a visual diagram.)_
+(import image)
 
 ### b. Relational Model
 
