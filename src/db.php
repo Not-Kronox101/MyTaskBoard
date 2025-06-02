@@ -6,7 +6,7 @@ class Database
 
         public function __construct()
         {
-                $dsn = 'mysql:host=127.0.0.1;port=3301;dbname=todoApp;charset=utf8mb4';
+                $dsn = 'mysql:host=127.0.0.1;port=3306;dbname=todoApp;charset=utf8mb4';
                 $username = 'root';
                 $password = 'fo39ajf3';
 
