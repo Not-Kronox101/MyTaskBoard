@@ -97,7 +97,7 @@ $charset = 'utf8mb4';
 
 ## Maintenance
 
-✅ Regular Tasks
+Regular Tasks
 
 Monitor logs:
 
