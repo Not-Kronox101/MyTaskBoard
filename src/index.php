@@ -263,6 +263,27 @@ $tasks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     <a class="logout-link" href="logout.php">Logout</a>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const deleteForms = document.querySelectorAll('form[action="delete_task.php"]');
+
+            deleteForms.forEach(form => {
+                form.addEventListener('submit', (e) => {
+                    const li = form.closest('li');
+                    if (!li) return;
+
+                    if (!li.classList.contains('completed')) {
+                        const confirmed = window.confirm('This task is not completed. Are you sure you want to delete it?');
+                        if (!confirmed) {
+                            e.preventDefault();
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+
 </body>
 
 </html>
