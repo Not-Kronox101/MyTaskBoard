@@ -41,6 +41,9 @@ MyTaskBoard allows you to:
 
 - All your tasks are displayed below the input field in a simple list.
 
+### Complete Tasks
+- By pressing the green complete button, you can complete the task.
+
 ### Delete Tasks
 
 - To delete a task, click the **Delete** button next to it.
