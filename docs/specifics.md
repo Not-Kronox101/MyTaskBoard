@@ -1,14 +1,4 @@
-# Team: Sake
-
-## Team Members
-- 413855593 (加藤大地)  
-- 410855281 (安藤輝翔)  
-- 413855171 (李婕亞)  
-- 413855114 (耶律楚材)
-
----
-
-## 1. Demo Scenario Overview
+### 1. Demo Scenario Overview
 
 ### Demo Features to be Presented
 - Users can add a new task with a description.  

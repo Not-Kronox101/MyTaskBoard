@@ -1,13 +1,3 @@
-# Team: Sake
-
-**Members:**
-- 413855593 加藤大地  
-- 410855281 安藤輝翔  
-- 413855171 李婕亞  
-- 413855114 耶律楚材  
-
----
-
 ## Project Title: MyTaskBoard
 
 ### High-Level Functionalities

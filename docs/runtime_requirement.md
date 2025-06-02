@@ -3,7 +3,7 @@
 The developed system is designed to run on our specified hardware and software environment. Below are the details of the hardware platform and the required software packages necessary for running the application.
 
 ### Hardware Platform
-- **Raspberry Pi** (Model 3B+ or later recommended)
+- **Raspberry Pi** (Zero 2 or later recommended)
 - **MicroSD Card** (Minimum 16GB storage)
 - **Internet Connectivity** (Wi-Fi or Ethernet)
 - **Power Supply** (5V/2.5A for stable performance)
