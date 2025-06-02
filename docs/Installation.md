@@ -5,8 +5,7 @@ This guide explains how to set up and run the **MyTaskBoard** PHP + MariaDB web 
 
 * * * * *
 
-🛠️ Requirements
-----------------
+Requirements
 
 -   Raspberry Pi (any model with internet access)
 
@@ -18,14 +17,13 @@ This guide explains how to set up and run the **MyTaskBoard** PHP + MariaDB web 
 
 * * * * *
 
-🧹 1. Install Dependencies
---------------------------
+1. Install Dependencies
 
 SSH into your Pi (or open Terminal directly), then run:
 
 ```
 sudo apt update
-sudo apt install apache2 mariadb-server php php-mysql 
+sudo apt install git apache2 mariadb-server php php-mysql 
 
 ```
 
@@ -47,8 +45,7 @@ sudo systemctl start mariadb
 
 * * * * *
 
-🛡️ 2. Set Up the Database
---------------------------
+2. Set Up the Database
 
 Login to MariaDB:
 
@@ -69,7 +66,7 @@ EXIT;
 
 ```
 
-> ⚠️ If `root@localhost` already exists, just run:
+> If `root@localhost` already exists, just run:
 >
 > ```
 > ALTER USER 'root'@'localhost' IDENTIFIED BY 'fo39ajf3';
@@ -79,8 +76,8 @@ EXIT;
 
 * * * * *
 
-📂 3. Deploy the Project
-------------------------
+3. Deploy the Project
+
 Clone the github repository:
 
 ```
@@ -105,8 +102,7 @@ rm -rf MyTaskBoard
 
 * * * * *
 
-📁 4. Import the Database Schema
---------------------------------
+4. Import the Database Schema
 
 In the src/sql there is a database schema:
 
@@ -126,8 +122,7 @@ sudo mariadb -u root -p todoApp < /var/www/html/sql/test_data.sql
 
 * * * * *
 
-🚀 5. Access Your App
----------------------
+5. Access Your App
 
 -   Find your Pi's IP: `hostname -I`
 
@@ -140,15 +135,13 @@ sudo mariadb -u root -p todoApp < /var/www/html/sql/test_data.sql
 
 * * * * *
 
-🔄 After Reboot
----------------
+After Reboot
 
 On each reboot, the web server and database auto-start. No need to re-import or reconfigure anything.
 
 * * * * *
 
-📌 Troubleshooting
-------------------
+Troubleshooting
 
 -   **Connection failed** (SQL error): Check `db.php` has correct username/password.
 
