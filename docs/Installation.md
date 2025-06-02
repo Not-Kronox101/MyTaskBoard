@@ -115,6 +115,13 @@ sudo mariadb -u root -p todoApp < /var/www/html/sql/create.sql
 
 ```
 
+There is also mock user information for demo:
+
+```
+sudo mariadb -u root -p todoApp < /var/www/html/sql/test_data.sql
+
+```
+
 > Enter your password: `fo39ajf3`
 
 * * * * *
