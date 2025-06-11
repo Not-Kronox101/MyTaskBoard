@@ -24,7 +24,6 @@ SSH into your Pi (or open Terminal directly), then run:
 ```
 sudo apt update
 sudo apt install git apache2 mariadb-server php php-mysql 
-
 ```
 
 Enable the web server and database on boot:
@@ -32,7 +31,6 @@ Enable the web server and database on boot:
 ```
 sudo systemctl enable apache2
 sudo systemctl enable mariadb
-
 ```
 
 Start them now:
@@ -40,7 +38,6 @@ Start them now:
 ```
 sudo systemctl start apache2
 sudo systemctl start mariadb
-
 ```
 
 * * * * *
@@ -51,7 +48,6 @@ Login to MariaDB:
 
 ```
 sudo mariadb
-
 ```
 
 Then inside the MariaDB prompt:
@@ -71,7 +67,6 @@ EXIT;
 > ```
 > ALTER USER 'root'@'localhost' IDENTIFIED BY 'fo39ajf3';
 > FLUSH PRIVILEGES;
->
 > ```
 
 * * * * *
@@ -82,21 +77,18 @@ Clone the github repository:
 
 ```
 git clone https://github.com/Not-Kronox101/MyTaskBoard
-
 ```
 
 Move src directory into the web root:
 
 ```
-mv MyTaskBoard/src/* /var/www/html
-
+mvdir MyTaskBoard/src/* /var/www/html
 ```
 
 Remove the cloned repository:
 
 ```
-rm -rf MyTaskBoard
-
+rmdir -rf MyTaskBoard
 ```
 
 
@@ -108,14 +100,12 @@ In the src/sql there is a database schema:
 
 ```
 sudo mariadb -u root -p todoApp < /var/www/html/sql/create.sql
-
 ```
 
 There is also mock user information for demo:
 
 ```
 sudo mariadb -u root -p todoApp < /var/www/html/sql/test_data.sql
-
 ```
 
 > Enter your password: `fo39ajf3`
@@ -130,7 +120,6 @@ sudo mariadb -u root -p todoApp < /var/www/html/sql/test_data.sql
 
     ```
     http://<your-pi-ip>/
-
     ```
 
 * * * * *
