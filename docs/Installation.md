@@ -91,6 +91,11 @@ Remove the cloned repository:
 rmdir -rf MyTaskBoard
 ```
 
+Remove the default index page of apache2:
+
+```
+rm /var/www/html/index.html
+```
 
 * * * * *
 
